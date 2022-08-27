@@ -5,3 +5,17 @@ body {
 h1 {
     color: greenyellow; text-align: center;
 }
+table {
+    padding-left: 50px;
+}
+.cellule {
+    color: yellow;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 50px;
+}
+.cellule:hover {
+    color:red;;
+    background-color: yellow;
+    background-blend-mode: difference;
+}
