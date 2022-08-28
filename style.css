@@ -8,14 +8,16 @@ h1 {
 table {
     padding-left: 50px;
 }
-.cellule {
-    color: yellow;
-    font-weight: bold;
-    font-size: x-large;
-    padding: 50px;
+.btn-grp {
+    border-bottom-style:ridge;
+    color: greenyellow;
+    padding-bottom: 5%;
+    padding-right: 20%;
 }
-.cellule:hover {
-    color:red;;
-    background-color: yellow;
-    background-blend-mode: difference;
+.btn-grp:hover {
+    color:red;
+    padding-bottom: 15%;
+}
+td {
+    width: 10%;
 }
