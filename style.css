@@ -1,29 +1,45 @@
 body {
     background: url(image/ankoay_studio_05.jpg);
-    background-size: cover;
+    background-position: 50% 20%;
 }
 .jumbotron {
+    width: auto;
     background-color: white; 
 }
 #entete {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: red; text-align: center; padding-top: 25px; text-transform:uppercase; font-size: xx-largeopen; font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red; text-align: center; padding-top: 25px; text-transform:uppercase; font-size: 2em; font-weight: bold;
     letter-spacing: 1em; text-shadow: 1px 1px 0 green, 2px 2px 0 white, 5px 5px 0 green;
 }
 .btn_01 {
-background:none;
-border: 4px solid #fff;
-border-radius: 10px;
-color:#fff;
-display:block;
-font-size:1.6em;
-font-weight: bold;
-margin:10px auto;
-padding:1em 6em;
-text-transform: uppercase;
+    border:0;
+    background:transparent;
+    color: blue;
+    position:relative;
+    overflow: hidden;
+    margin-left: 200px;
+    padding: 50px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size:1.5em;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+    transition:all .2s;
+}
+.btn_01::after{
+    content: "";
+    width:500px;
+    height: 500px;
+    background:linear-gradient(90deg, red 0%, white 50%, green 100%);
+    position:absolute;
+    top:-50%;
+    left: -100px;
+    z-index:-1;
+    transition:all .2s;
+}
+.btn_01:hover::after{
+    transform: rotate(180deg);
 }
 .btn_01:hover{
-    background-color: #fff;
-    border: 4px solid red;
-    color:green;
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, .5), -10px 10px 25px 0px rgba(39, 200, 255, .5);
 }
