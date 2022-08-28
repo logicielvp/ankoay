@@ -12,12 +12,13 @@ body {
     letter-spacing: 1em; text-shadow: 1px 1px 0 green, 2px 2px 0 white, 5px 5px 0 green;
 }
 .btn_01 {
+    display:block;
     border:0;
     background:transparent;
     color: blue;
     position:relative;
     overflow: hidden;
-    margin-left: 200px;
+    margin: 10px auto;
     padding: 50px 50px;
     border-radius: 30px;
     cursor: pointer;
