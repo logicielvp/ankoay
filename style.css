@@ -2,8 +2,11 @@ body {
     background: url(image/ankoay_studio_05.jpg);
     background-size: cover;
 }
+.jumbotron {
+    background-color: green; 
+}
 h1 {
-    color: greenyellow; text-align: center;
+    color: red; text-align: center; padding-top: 20px; font-variant:small-caps;
 }
 table {
     padding-left: 50px;
